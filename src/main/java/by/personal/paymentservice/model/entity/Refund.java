@@ -3,6 +3,7 @@ package by.personal.paymentservice.model.entity;
 import by.personal.paymentservice.model.enums.RefundStatus;
 import by.personal.paymentservice.model.enums.convert.RefundStatusConverter;
 import jakarta.persistence.Convert;
+import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
@@ -16,7 +17,8 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @Getter
 @Setter
-public class Refund {
+@Entity
+public class Refund extends BaseEntity {
     private BigDecimal refundAmount;
     private String reason;
 

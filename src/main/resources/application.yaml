@@ -3,8 +3,8 @@ spring:
     name: payment-service
   datasource:
     url: jdbc:postgresql://localhost:5432/payment_db
-    username: root
-    password: root
+    username: user
+    password: 1234
   liquibase:
     change-log: classpath:db/changelog/db.changelog-master.yaml
     enabled: false

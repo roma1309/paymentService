@@ -4,6 +4,7 @@ import by.personal.paymentservice.model.enums.PaymentTransactionStatus;
 import by.personal.paymentservice.model.enums.convert.PaymentTransactionStatusConverter;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Convert;
+import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
@@ -19,6 +20,7 @@ import java.util.List;
 @AllArgsConstructor
 @Getter
 @Setter
+@Entity
 public class PaymentTransaction extends BaseEntity {
 
     private BigDecimal amount;
